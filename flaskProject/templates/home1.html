@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/home1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../static/home1.js"></script>
+</head>
+<body>
+  <div id="main">
+  <div class="home">
+      <div class="nav-bar">
+          <div class="nav-logo"><img src="{{ url_for('static',filename='image/whie_local2.png') }}">
+
+          </div>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="{{'/mainhome'}}">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">ContactUs</a></li>
+              </ul>
+              <button type="button" class="btn"><a href="{{'/signup'}}">SIGN UP</a></button>
+          </div>
+          </div>
+      <div class="home-title">
+          <h1>Order anything from <span>Local Stores <br> from your nearby location</span><br>So Stay Tuned Here </h1>
+          <button type="button" class="btn" ><a href="#">Exploring</a> </button>
+      </div>
+      <div class="vertical-bar">
+          <div class="search">
+              <!--<i class="fa fa-th-list" ></i>
+              <i class="fa fa-search" ></i>-->
+
+            <!-- adding menu animation-->
+              <div class="container" onclick="openNav(this) ">
+               <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+           <!-- adding sidebar to home -->
+           <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav(this)">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+              </div>
+   
+           
+           </div>
+         
+          <div class="social">
+              <i class="fa fa-facebook" ></i>
+              <i class="fa fa-instagram" ></i>
+              <i class="fa fa-twitter" ></i>
+              <i class="fa fa-pinterest" ></i>
+          </div>
+      </div>
+  </div>
+  </div>
+</body>
+</html>

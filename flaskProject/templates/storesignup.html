@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="cont">
+    <div class="form sign-in">
+        <form action="{{"/store_signin"}}" method="POST">
+        <h2>Dashboard Login</h2>
+        <label>
+            <span>Email Address</span>
+          <input type="email" name="store_email" >
+        </label>
+            <label>
+            <span>Password</span>
+            <input type="password" name="store_password">
+        </label>
+        <button class="submit" type="submit">Log In</button>
+    </form>
+        <p class="forget-password">Forget password?</p>
+        <div class="social-media">
+            <ul>
+                <li><i class="fa fa-facebook-official" ></i></li>
+                 <li><i class="fa fa-instagram" ></i></li>
+                 <li><i class="fa fa-twitter" ></i></li>
+                 <li><i class="fa fa-pinterest" ></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-cont">
+        <div class="img">
+            <div class="img-text m-up">
+                <h2>New here?</h2>
+                <p>Sign up and Add Your store</p>
+            </div>
+              <div class="img-text m-in">
+                <h2>One of us?</h2>
+                <p>If you already has an account ,just sign in </p>
+            </div>
+            <div class="img-btn">
+                <span class="m-up">Sign Up </span>
+                <span class="m-in">Sign In </span>
+
+            </div>
+        </div>
+
+        <form action="{{"/store_signup"}}" method="post">
+         <div class="form sign-up">
+
+                <h2>Sign Up</h2>
+                <label>
+                    <span> Store Name</span>
+                    <input type="text" name="store_name">
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="store_email">
+                </label>
+                <label>
+                    <span>contact</span>
+                    <input type="number" name="store_contact" >
+                </label>
+                <label>
+                    <span>Address</span>
+                    <input type="text" name="store_address">
+                </label>
+                <label>
+                    <span>Confirm password</span>
+                    <input type="password" name="store_password">
+                </label>
+                <button type="submit" class="submit" > ADD STORE</button>
+        </div>
+     </form>
+    </div>
+</div>
+
+ <script type="text/javascript" src="../static/script.js"></script>
+</body>
+</html>
